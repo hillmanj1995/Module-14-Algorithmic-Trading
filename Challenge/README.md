@@ -64,9 +64,9 @@ The analyst can note that changing the size of the training data set by increasi
 
     ![6mo_SW10_LW200_baseline_returns.png](https://github.com/hillmanj1995/Module-14-Algorithmic-Trading/blob/main/Challenge/Resources/6mo_10SW_200LW_baseline_cumu_returns.png)
 
-The analyst can also note that changing the size of the short and long windows does little to improve effectiveness of the model.  As the window values increase, one can see small increases in accuracy and recall for the -1.0, however the recall for the 1.0 slightly decreases.  It was concluded that the most optimal model used 6 months of training data, a short window of 10, and a long window of 200.  This resulted in a  high accuracy score relative to the baseline, as well as, high recall on the 1.0, and the highest recall of any of the tuned models on the -1.0.
+The analyst can also note that changing the size of the short and long windows does little to improve the effectiveness of the model.  As the window values increase, one can see small increases in accuracy and recall for the -1.0, however the recall for the 1.0 slightly decreases.  It was concluded that the most optimal model used 6 months of training data, a short window of 10, and a long window of 200.  This resulted in a high accuracy score relative to the baseline, as well as, high recall on the 1.0, and the highest recall of any of the tuned models on the -1.0.
 
-## New Machine Learning Classifiers:
+## New Machine Learning Classifiers and Results:
 
 The analyst ran the same data set through various other classifiers to evaluate model performance.  The classifier typers were LogisticRegression, DecisionTreeClassifier, and AdaBoost.  The results from those models are shown below:
 
@@ -93,3 +93,5 @@ The analyst ran the same data set through various other classifiers to evaluate 
     ![Ada_perf.png](https://github.com/hillmanj1995/Module-14-Algorithmic-Trading/blob/main/Challenge/Resources/Ada_perf.png)
 
     ![Ada_cumu_returns.png](https://github.com/hillmanj1995/Module-14-Algorithmic-Trading/blob/main/Challenge/Resources/Ada_cumu_returns.png)
+
+The analyst noted that the additional models that utilized new methods of classifiers did not outperform the optimized baseline model.  It was observed that the Logistic Regression, Decision Trees, and AdaBoost models all had high recall values for the -1.0, which was not noted in the baseline models, however the accuracy scores of these models were lower than that of the optimized baseline model.
